@@ -4,11 +4,10 @@ metadata:
   name: notes-app-service
   namespace: notes-app
 spec:
-  type: NodePort  # Change service type to NodePort
+  type: ClusterIP  # Ensure the service is of type ClusterIP
   selector:
     app: notes-app
   ports:
     - protocol: TCP
       port: 80
       targetPort: 8000
-      nodePort: 30007  # Specify a fixed NodePort (optional)
