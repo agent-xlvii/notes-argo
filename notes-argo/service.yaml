@@ -9,5 +9,5 @@ spec:
     app: notes-app
   ports:
     - protocol: TCP
-      port: 80
+      port: 8010
       targetPort: 8000
